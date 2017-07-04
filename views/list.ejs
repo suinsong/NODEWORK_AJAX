@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--  header.ejs에 있는 내용 불러오기 -->
+<% include header.ejs %>
+
+
+</head>
+<body>
+	<% include nav.ejs %>
+	<header class="w3-container w3-blue w3-margin">
+		<h3>학 생 리 스 트 보 기</h3>
+	</header>
+	<hr />
+	<header>
+		<input type="text"
+			class="w3-input w3-border w3-hover-light-grey w3-margin"
+			placeholder="학생이름 검색 후 Enter를 누르세요">
+		<button class="w3-button w3-block w3-large w3-orange">검색</button>
+	</header>
+	<% include list_body.ejs %>
+
+</body>
+</html>
